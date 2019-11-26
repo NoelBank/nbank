@@ -1,0 +1,9 @@
+{
+  "name": "nbank",
+  "version": "0.0.1",
+  "description": "personal website for me",
+  "main": "index.js",
+  "author": "Noel Bank",
+  "license": "MIT",
+  "private": false
+}
