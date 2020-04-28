@@ -71,6 +71,9 @@ const TemplateWrapper = ({ children }) => {
                 <li>
                   <Link to="/imprint">Imprint</Link>
                 </li>
+                <li>
+                  <Link to="/privacy">Privacy Policy</Link>
+                </li>
               </ul>
               <p className="sidebar__social">
                 {data.allDatoCmsSocialProfile.edges.map(({ node: profile }) => (
@@ -121,6 +124,9 @@ const TemplateWrapper = ({ children }) => {
                   <li>
                     <Link to="/imprint">Imprint</Link>
                   </li>
+                  <li>
+                  <Link to="/privacy">Privacy Policy</Link>
+                </li>
                 </ul>
                 <p className="sidebar__social">
                   {data.allDatoCmsSocialProfile.edges.map(
