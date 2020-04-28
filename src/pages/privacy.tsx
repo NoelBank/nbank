@@ -23,7 +23,7 @@ export default Privacy;
 
 export const query = graphql`
   query PrivacyQuery {
-    privacy: allDatoCmsPrivacyPage {
+    privacy: allDatoCmsPrivacy {
       edges {
         node {
           title
