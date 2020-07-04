@@ -48,7 +48,20 @@ const TemplateWrapper = ({ children }) => {
           <HelmetDatoCms
             favicon={data.datoCmsSite.faviconMetaTags}
             seo={data.datoCmsHome.seoMetaTags}
-          />
+          >
+            <script
+              async
+              src="https://www.googletagmanager.com/gtag/js?id=UA-75921009-3"
+            />
+            <script>
+              {` window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'UA-75921009-3');`}
+            </script>
+          </HelmetDatoCms>
+
           <div className="container__sidebar">
             <div className="sidebar">
               <h6 className="sidebar__title">
@@ -125,8 +138,8 @@ const TemplateWrapper = ({ children }) => {
                     <Link to="/imprint">Imprint</Link>
                   </li>
                   <li>
-                  <Link to="/privacy">Privacy Policy</Link>
-                </li>
+                    <Link to="/privacy">Privacy Policy</Link>
+                  </li>
                 </ul>
                 <p className="sidebar__social">
                   {data.allDatoCmsSocialProfile.edges.map(
